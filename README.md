@@ -18,7 +18,7 @@ After running the app, you can see the api documentation and test api routes on:
 	localhost:3000/api
 
 
-<!-- For run the e2e test suits use this command: 
+For run the e2e test suits use this command: 
 
-	npm run test:e2e -->
+	npx jest --config=jest-e2e.config.js
 
