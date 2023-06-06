@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { ExportRequest } from './interface/export-request.interface';
-import { ExportRequestDto } from './dto/export-request.dto';
+import { ExportBookTypeEnum, ExportRequestDto } from './dto/export-request.dto';
 import { JobStateEnum } from './constants/job.constants';
 
 @Injectable()
@@ -20,7 +20,7 @@ export class ExportsService {
     this.exportRequests.push(exportRequest);
     setTimeout(() => {
       this.updateRequestState(exportRequest);
-    }, type === 'epub' ? 10000 : 25000);
+    }, type === ExportBookTypeEnum.epub ? 10000 : 25000);
   }
 
   getExportRequests(): Record<string, ExportRequest[]> {
