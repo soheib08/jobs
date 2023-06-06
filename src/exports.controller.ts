@@ -9,7 +9,7 @@ export class ExportsController {
   constructor(private readonly exportsService: ExportsService) {}
 
   @Post()
-  @HttpCode(200)
+  @HttpCode(201)
   createExportRequest(@Body() requestDto: ExportRequestDto): void {
     this.exportsService.createExportRequest(requestDto);
   }

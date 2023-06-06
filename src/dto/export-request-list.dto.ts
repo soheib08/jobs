@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { JobStateEnum } from 'src/constants/job.constants';
 import { ExportBookTypeEnum } from './export-request.dto';
+import { JobStateEnum } from '../constants/job.constants';
 
 export class ExportRequestListItem {
   @ApiProperty({

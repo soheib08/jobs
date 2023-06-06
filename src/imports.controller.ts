@@ -9,7 +9,7 @@ export class ImportsController {
   constructor(private readonly importsService: ImportsService) {}
 
   @Post()
-  @HttpCode(200)
+  @HttpCode(201)
   createImportRequest(@Body() requestDto: ImportRequestDto): void {
     this.importsService.createImportRequest(requestDto);
   }

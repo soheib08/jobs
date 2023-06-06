@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { JobStateEnum } from 'src/constants/job.constants';
+import { JobStateEnum } from '../constants/job.constants';
 import { ImportBookTypeEnum } from './import-request.dto';
 
 export class ImportRequestListItem {
